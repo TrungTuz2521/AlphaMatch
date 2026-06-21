@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BtnCartoon" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:fontFamily">@font/baloo2</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">6dp</item>
+        <item name="cornerRadius">999dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+</resources>

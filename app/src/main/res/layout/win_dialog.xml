@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Phần trên – nền xanh đậm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1565C0"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingBottom="20dp"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉"
+            android:textSize="52sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvWinTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xuất Sắc!"
+            android:fontFamily="@font/baloo2"
+            android:textSize="28sp"
+            android:textColor="#FFD700"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã tìm hết tất cả các cặp!"
+            android:fontFamily="@font/baloo2"
+            android:textSize="13sp"
+            android:textColor="#90CAF9"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvWinRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐⭐⭐"
+            android:textSize="26sp"
+            android:letterSpacing="0.2"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <!-- Phần dưới – nền trắng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- 3 ô thống kê -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_dialog_rounded"
+            android:layout_marginBottom="16dp">
+
+            <!-- Thời gian -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THỜI GIAN"
+                    android:fontFamily="@font/baloo2"
+                    android:textSize="10sp"
+                    android:textColor="#90CAF9"/>
+                <TextView
+                    android:id="@+id/tvWinTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:fontFamily="@font/baloo2"
+                    android:textSize="16sp"
+                    android:textColor="#1565C0"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="1.5dp" android:layout_height="40dp"
+                android:background="#E3F2FD" android:layout_gravity="center_vertical"/>
+
+            <!-- Số cặp -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SỐ CẶP"
+                    android:fontFamily="@font/baloo2"
+                    android:textSize="10sp"
+                    android:textColor="#90CAF9"/>
+                <TextView
+                    android:id="@+id/tvWinPairs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 / 18"
+                    android:fontFamily="@font/baloo2"
+                    android:textSize="16sp"
+                    android:textColor="#1565C0"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="1.5dp" android:layout_height="40dp"
+                android:background="#E3F2FD" android:layout_gravity="center_vertical"/>
+
+            <!-- Cấp độ -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CẤP ĐỘ"
+                    android:fontFamily="@font/baloo2"
+                    android:textSize="10sp"
+                    android:textColor="#90CAF9"/>
+                <TextView
+                    android:id="@+id/tvWinLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ Dễ"
+                    android:fontFamily="@font/baloo2"
+                    android:textSize="16sp"
+                    android:textColor="#1565C0"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 2 nút -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnWinReplay"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="🔄  Chơi lại"
+                android:fontFamily="@font/baloo2"
+                android:textSize="16sp"
+                android:textColor="#1A3A6E"
+                android:backgroundTint="#FFD700"
+                app:cornerRadius="999dp"/>
+
+            <Button
+                android:id="@+id/btnWinHome"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="🏠  Về nhà"
+                android:fontFamily="@font/baloo2"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#EF5350"
+                app:cornerRadius="999dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

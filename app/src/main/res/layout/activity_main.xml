@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- ⭐ Ngôi sao nhảy trang trí – FIX: thêm 3 TextView sao -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐"
+                    android:textSize="25sp"
+                    android:paddingHorizontal="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌟"
+                    android:textSize="32sp"
+                    android:paddingHorizontal="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐"
+                    android:textSize="25sp"
+                    android:paddingHorizontal="4dp"/>
+            </LinearLayout>
+
+            <!-- Logo TwoChar – FIX: đổi sang font baloo2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AlphaMatch"
+                android:fontFamily="@font/baloo2"
+                android:textSize="52sp"
+                android:textColor="#FFD700"
+                android:shadowColor="#0D47A1"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="1"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎮Tìm sự phù hợp, rèn luyện trí não!"
+                android:textSize="15sp"
+                android:textColor="#1976D5"
+                android:fontFamily="@font/baloo2"
+                android:layout_marginBottom="2dp"/>
+
+            <!-- Mascot -->
+            <ImageView
+                android:id="@+id/imgMascot"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_mascot_cat"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Nút Bắt đầu -->
+            <Button
+                android:id="@+id/btnStart"
+                style="@style/BtnCartoon"
+                android:text="🎯  Bắt Đầu Chơi!"
+                android:backgroundTint="#FFD700"
+                android:textColor="#1A3A6E"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Nút Chọn level -->
+            <Button
+                android:id="@+id/btnLevel"
+                style="@style/BtnCartoon"
+                android:text="🏆  Chọn Cấp Độ"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#1565C0"/>
+
+
+            <Button
+                android:id="@+id/btnSetting"
+                style="@style/BtnCartoon"
+                android:text="⚙️  Cài Đặt"
+                android:backgroundTint="#1976D2"
+                android:textColor="#1864AB"/>
+
+            <Button
+                android:id="@+id/btnIfor"
+                style="@style/BtnCartoon"
+                android:text="ℹ️  Hướng Dẫn"
+                android:backgroundTint="#29B6F6"
+                android:textColor="#01579B"/>
+
+            <Button
+                android:id="@+id/btnExit"
+                style="@style/BtnCartoon"
+                android:text="👋  Thoát"
+                android:backgroundTint="#EF5350"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
